@@ -47,7 +47,7 @@ In the source code of the page we can find a hint.
 ![Safe_haven_hint](/assets/img/tryhackme/psychobreak/12.png)
 I had a hard time in this part. I tried enumerating using various methods but it took me more than a hour to finally find this.
 
-<pre>gobuster dir -u http://<ip-address>/ -w /usr/share/dirb/wordlist/medium.txt -x php,txt,js,html -t 100</pre>
+<pre>gobuster dir -u http://ip-address/ -w /usr/share/dirb/wordlist/medium.txt -x php,txt,js,html -t 100 </pre>
 
 use gobuster with the medium wordlist to find the hidden directory.
 
