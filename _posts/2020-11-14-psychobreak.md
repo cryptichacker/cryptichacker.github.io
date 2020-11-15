@@ -46,8 +46,9 @@ First up is enumeration</p>
 
 <br>
 ![Locker_room](/assets/img/tryhackme/psychobreak/6.png)
-<br>
-<p>At first I thought it was rot13 encoded but I was wrong. Go the link [vigenere-solver](https://www.guballa.de/vigenere-solver) and choose the correct variant given in the image to decode the text</p>
+<br><p>
+At first I thought it was rot13 encoded but I was wrong. Go the link [vigenere-solver](https://www.guballa.de/vigenere-solver) and choose the correct variant given in the image to decode the text
+</p>
 
 <br>
 ![decode](/assets/img/tryhackme/psychobreak/7.png)
