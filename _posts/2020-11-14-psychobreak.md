@@ -43,7 +43,7 @@ First up is enumeration
 
 ![Locker_room](/assets/img/tryhackme/psychobreak/7.png)
 <br>
-<p>At first I thought it was rot13 encoded but I was wrong. Go the link [**vigenere-solver**](https://www.guballa.de/vigenere-solver) and choose the correct variant given in the image to decode the text</p>
+<p>At first I thought it was rot13 encoded but I was wrong. Go the link [vigenere-solver](https://www.guballa.de/vigenere-solver) and choose the correct variant given in the image to decode the text</p>
 
 ![decode](/assets/img/tryhackme/psychobreak/8.png)
 <br>
@@ -96,7 +96,7 @@ http://<ip-address>/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara
 binwalk -e image.jpg
 </pre>
 <br>
-<p>After listening to the .wav file I found that it was morse code. So, I decrypted using [**Morse Decoders**](https://morsecode.world/international/decoder/audio-decoder-expert.html).</p>
+<p>After listening to the .wav file I found that it was morse code. So, I decrypted using [Morse Decoders](https://morsecode.world/international/decoder/audio-decoder-expert.html).</p>
 
 ![sound_file_decryption](/assets/img/tryhackme/psychobreak/27.png)
 <br>
