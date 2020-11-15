@@ -52,7 +52,7 @@ I had a hard time in this part. I tried enumerating using various methods but it
 use gobuster with the medium wordlist to find the hidden directory.
 
 ![The_keeper](/assets/img/tryhackme/psychobreak/14.png)
-<p>After clicking on the link we are redirected to another page.</p>
+After clicking on the link we are redirected to another page.
 
 ![Save_yourself](/assets/img/tryhackme/psychobreak/15.png)
 A simple google image search would tell the answer right away. And we’ll get the keeper’s key. So let’s go to the final room given in the map.
@@ -63,7 +63,7 @@ After clicking on the link, it redirects to another page.
 ![Spiderlady](/assets/img/tryhackme/psychobreak/19.png)
 After looking at the source page, I found a hint which told that the keyword *“shell”* would be useful. So, I tried appending it to the end of the url but there was no response. Finally, after setting it with value, it responds….
 
-<pre>http://<ip-address>/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara.php?shell=ls ..</pre>
+```http://ip-address/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara.php?shell=ls .. ```
 
 ![dir_list](21.png)
 I downloaded the two files after moving into the other directory that was returned in the response.
