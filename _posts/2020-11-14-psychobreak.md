@@ -4,7 +4,6 @@ title: Psychobreak
 date: 2020-11-14 19:00:00 +0000
 categories: [Tryhackme, Easy]
 tags: [thm]
-image: /assets/img/tryhackme/psychobreak/room_icon.jpeg
 ---
 
 
