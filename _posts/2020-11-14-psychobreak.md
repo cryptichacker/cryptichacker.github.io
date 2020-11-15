@@ -1,14 +1,12 @@
 ---
 layout: post
-title: psychobreak
+title: Psychobreak
 date: 2020-11-14 19:00:00 +0000
 categories: [Tryhackme, Easy]
 tags: [thm]
 image: /assets/img/tryhackme/psychobreak/room_icon.jpeg
 ---
 
-# **Psychobreak**
----
 
 Psycho Break is a TryHackMe room which is based on the video game “The Evil Within”. The objective is to get the user flag and the root flag.
 
@@ -21,7 +19,7 @@ Deploy the VM and let’s go…
 
 First up is enumeration
 
-## #Task #1
+## Task 1
 ---
 
 ![nmap](/assets/img/tryhackme/psychobreak/3.png)
@@ -29,7 +27,7 @@ First up is enumeration
 <p>A simple nmap scan would give the answers to the first task. So I tried to login to the ftp service. Anonymous login is not enabled in ftp service. So let’s move on to http.</p>
 
 
-## #Task #2
+## Task 2
 ---
 
 ![http_service](/assets/img/tryhackme/psychobreak/4.png)
@@ -45,7 +43,7 @@ First up is enumeration
 
 ![Locker_room](/assets/img/tryhackme/psychobreak/7.png)
 <br>
-<p>At first I thought it was rot13 encoded but I was wrong. Go the link *[vigenere-solver](https://www.guballa.de/vigenere-solver)* and choose the correct variant given in the image to decode the text</p>
+<p>At first I thought it was rot13 encoded but I was wrong. Go the link [**vigenere-solver**](https://www.guballa.de/vigenere-solver) and choose the correct variant given in the image to decode the text</p>
 
 ![decode](/assets/img/tryhackme/psychobreak/8.png)
 <br>
@@ -89,7 +87,7 @@ http://<ip-address>/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara
 <br>
 <p>I downloaded the two files after moving into the other directory that was returned in the response.</p>
 
-## #Task #3
+## Task 3
 ---
 <br>
 <p>The text file is just a message so I extracted the zip file. Extract the contents of the image file using binwalk since it was corrupted.</p>
@@ -98,7 +96,7 @@ http://<ip-address>/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara
 binwalk -e image.jpg
 </pre>
 <br>
-<p>After listening to the .wav file I found that it was morse code. So, I decrypted using *[Morse Decoders](https://morsecode.world/international/decoder/audio-decoder-expert.html)*.</p>
+<p>After listening to the .wav file I found that it was morse code. So, I decrypted using [**Morse Decoders**](https://morsecode.world/international/decoder/audio-decoder-expert.html).</p>
 
 ![sound_file_decryption](/assets/img/tryhackme/psychobreak/27.png)
 <br>
@@ -112,7 +110,7 @@ steghide --extract -sf image_file.jpg
 
 ![FTP_creds](/assets/img/tryhackme/psychobreak/28.png)
 
-## #Task #4
+## Task 4
 ---
 <br>
 <p>I found two files in the ftp server and I downloaded using the get command.</p>
@@ -139,7 +137,7 @@ done
 <p>There is another bunch of numbers given to be decoded. This is multitap phone cipher. It can be cracked using [dcode]().</p>
 
 
-## #Task #5
+## Task 5
 ---
 <br>
 <p>The decoded text is the SSH password. Without further wait, let’s login to ssh.</p>
@@ -168,7 +166,7 @@ p=subprocess.call(["/bin/sh","-i"])
 <br>
 <p>We also got the root flag.</p>
 
-## #Bonus
+## Bonus
 ---
 <br>
 ![bonus_flag](/assets/img/tryhackme/psychobreak/40.png)
