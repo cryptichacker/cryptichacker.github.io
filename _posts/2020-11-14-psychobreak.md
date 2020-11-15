@@ -31,15 +31,18 @@ First up is enumeration</p>
 ---
 <br>
 ![http_service](/assets/img/tryhackme/psychobreak/3.png)
-<br><p>In the source page we can find the room name. Let’s go into the room.</p>
+<br>
+<p>In the source page we can find the room name. Let’s go into the room.</p>
 
 <br>
 ![Sadist_room](/assets/img/tryhackme/psychobreak/4.png)
-<br><p>We can get the key to the locker room by clicking the given link. But wait… seconds after clicking the link the the background changes and a alert box asking for the key pops up.</p>
+<br>
+<p>We can get the key to the locker room by clicking the given link. But wait… seconds after clicking the link the the background changes and a alert box asking for the key pops up.</p>
 
 <br>
 ![second_sadist_room](/assets/img/tryhackme/psychobreak/5.png)
-<br><p>After entering the key, we can see the locker room page. After looking at the link to the map, it seems we need to decode the piece of text to get the map.</p>
+<br>
+<p>After entering the key, we can see the locker room page. After looking at the link to the map, it seems we need to decode the piece of text to get the map.</p>
 
 <br>
 ![Locker_room](/assets/img/tryhackme/psychobreak/6.png)
@@ -47,14 +50,17 @@ First up is enumeration</p>
 
 <br>
 ![decode](/assets/img/tryhackme/psychobreak/7.png)
-<br><p>After decoding, enter the decoded text to get access to map. Let’s move on to the next room…</p>
+<br>
+<p>After decoding, enter the decoded text to get access to map. Let’s move on to the next room…</p>
 
 <br>
 ![Safe_haven](/assets/img/tryhackme/psychobreak/8.png)
-<br><p>In the source code of the page we can find a hint.</p>
+<br>
+<p>In the source code of the page we can find a hint.</p>
 
 <br>
 ![Safe_haven_hint](/assets/img/tryhackme/psychobreak/11.png)
-<br><p>I had a hard time in this part. I tried enumerating using various methods but it took me more than a hour to finally find this.</p>
+<br>
+<p>I had a hard time in this part. I tried enumerating using various methods but it took me more than a hour to finally find this.</p>
 
 
