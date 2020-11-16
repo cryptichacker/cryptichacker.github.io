@@ -149,6 +149,7 @@ So, I appended the python reverse shell in the file and opened a netcat listener
 We also got the root flag.
 
 ## Bonus
+---
 
 ![bonus_flag](/assets/img/tryhackme/psychobreak/40.png)
 
