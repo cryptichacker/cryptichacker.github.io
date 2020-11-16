@@ -4,7 +4,6 @@ title: Psychobreak
 date: 2020-11-14 19:00:00 +0000
 category: [Tryhackme, Easy]
 tags: [thm,linux,easy,puzzle]
-image: /assets/img/tryhackme/psychobreak/room_icon.jpeg
 ---
 
 ---
@@ -88,6 +87,7 @@ After looking at the source page, I found a hint which told that the keyword *�
 I downloaded the two files after moving into the other directory that was returned in the response.
 
 ## <ins>Task 3</ins>
+---
 
 The text file is just a message so I extracted the zip file. Extract the contents of the image file using binwalk since it was corrupted.
 
@@ -103,6 +103,7 @@ The text file gives the ftp credentials. Let’s login to ftp…
 ![FTP_creds](/assets/img/tryhackme/psychobreak/28.png)
 
 ## <ins>Task 4</ins>
+---
 
 I found two files in the ftp server and I downloaded using the get command.
 
@@ -123,6 +124,7 @@ There is another bunch of numbers given to be decoded. This is multitap phone ci
 
 
 ## <ins>Task 5</ins>
+---
 
 The decoded text is the SSH password. Without further wait, let’s login to ssh.
 
