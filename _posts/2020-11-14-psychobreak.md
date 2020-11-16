@@ -78,7 +78,7 @@ A simple google image search would tell the answer right away. And we’ll get t
 After clicking on the link, it redirects to another page.
 
 ![Spiderlady](/assets/img/tryhackme/psychobreak/19.png)
-After looking at the source page, I found a hint which told that the keyword *“shell”* would be useful. So, I tried appending it to the end of the url but there was no response. Finally, after setting it with value, it responds….
+After looking at the source page, I found a hint which told that the keyword “shell” would be useful. So, I tried appending it to the end of the url but there was no response. Finally, after setting it with value, it responds….
 
 <br>
 <pre>http://ip-address/abandonedRoom/be8bc662d1e36575a52da40beba38275/herecomeslara.php?shell=ls .. </pre>
