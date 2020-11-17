@@ -8,4 +8,17 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+<script src="https://tryhackme.com/badge/32754"></script>
+
+Hi there!!
+
+I am basically a cyber security enthusiast and I challenge myself to learn new stuff everyday.
+
+I like doing CTFs, coding, gaming, watching anime and doing stuff..
+
+My aim right now is to start a blog.
+
+My favourite quote is from Rock Lee who is a character in Naruto Shippuden
+**_“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago.”_**
+
+Thanks for reading my blog.
