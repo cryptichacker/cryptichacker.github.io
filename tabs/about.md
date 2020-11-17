@@ -19,6 +19,7 @@ I like doing CTFs, coding, gaming, watching anime and doing stuff..
 My aim right now is to start a blog.
 
 My favourite quote is from Rock Lee who is a character in Naruto Shippuden
+<br>
 **_“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago.”_**
 
 Thanks for reading my blog.
