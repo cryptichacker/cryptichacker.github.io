@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Psychobreak
+title: Tryhackme - Psychobreak
 date: 2020-11-14 19:00:00 +0000
 category: [Tryhackme, Easy]
 tags: [thm,linux,easy,puzzle]
