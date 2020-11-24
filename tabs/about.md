@@ -9,6 +9,8 @@ title: About
 ---
 
 <script src="https://tryhackme.com/badge/32754"></script>
+<br>
+<script src="https://www.hackthebox.eu/badge/292576"></script>
 
 Hi there!!
 
