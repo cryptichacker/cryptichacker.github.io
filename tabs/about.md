@@ -16,12 +16,16 @@ Hi there!!
 
 I am basically a cyber security enthusiast and I challenge myself to learn new stuff everyday.
 
-I like doing CTFs, coding, gaming, watching anime and doing stuff..
+I like doing CTFs, coding, gaming and doing stuff..
 
-My aim right now is to start a blog.
+My aim right now is involve myself in learning more through ```CTFs``` and ```books```.
+
+In this blog, I will be sharing my journey through cybersecurity. At any point in time, if you feel what I've explained in any of my blog posts is wrong or needs more clarity feel free to contact me using my e-mail. I will be more than happy to hear from you.
 
 My favourite quote is from Rock Lee who is a character in Naruto Shippuden
 <br>
-**_“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago.”_**
+<center><b><i>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago.”</i></b></center>
 
 Thanks for reading my blog.
+
+
