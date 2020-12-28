@@ -19,7 +19,7 @@ tags: [thm,linux,medium,reversing,reverse-shell]
 ---
 Let's start with a nmap scan.
 <br>
-![nmap_scan](/assets/img/tryhackme/nerdherd/nmap_scan1.png)
+![nmap_scan](/assets/img/tryhackme/theblobblog/nmap_scan1.png)
 <br>
 From the first nmap scan, there are only two ports open: ```22/ssh``` and ```80/http```. I checked the ```http``` service first and found the apache2 page.
 <br>
@@ -32,13 +32,15 @@ I decoded the first comment in the following way:  ```base64``` using ```cyberch
 <br>
 ![dcode_first_comment](/assets/img/tryhackme/theblobblog/5.png)
 <br>
-ins>Port knocking</ins>
+
+
+## <ins>Port knocking</ins>
 ---
 I spent some time figuring out the hint in the message and finally came to a conclusion that it is ```port knocking```.
 
 In case you don't know what ```port knocking``` is, here is the explanation:
 
-Port knocking: Port knocking is a stealth method to externally open ports that, by default, the firewall keeps closed. It works by requiring connection attempts to a series of predefined closed ports. With a simple port knocking method, when the correct sequence of port "knocks" (connection attempts) is received, the firewall opens certain port(s) to allow a connection.
+**Port knocking:** Port knocking is a stealth method to externally open ports that, by default, the firewall keeps closed. It works by requiring connection attempts to a series of predefined closed ports. With a simple port knocking method, when the correct sequence of port "knocks" (connection attempts) is received, the firewall opens certain port(s) to allow a connection.
 
 source: [https://wiki.archlinux.org/index.php/Port_knocking](https://wiki.archlinux.org/index.php/Port_knocking)
 
@@ -58,7 +60,7 @@ From the nmap scan I found that ```Anonymous``` login is not enabled in the ```f
 <br>
 ![ftp_passwd](/assets/img/tryhackme/theblobblog/6.png)
 <br>
-I logged into the ftp server with the username ```bob``` and found a image file. Download it using the ```get file-name``` command.
+I logged into the ftp server with the username ```bob``` and found an image file. Download it using the ```get file-name``` command.
 <br>
 ![ftp_service](/assets/img/tryhackme/theblobblog/7.png)
 <br>
@@ -118,7 +120,7 @@ From the main function I understood that it requires ```6 arguments``` and it ch
 <br>
 ![blog_elf](/assets/img/tryhackme/theblobblog/20.png)
 <br>
-After some trial and error, I arrived at this. Use ```python pty``` to spawn a shell.
+After some trial and error, I arrived at ```6 5 4 3 2 1```. Use ```python pty``` to spawn a shell.
 <br>
 ![blog_crack](/assets/img/tryhackme/theblobblog/21.png)
 <br>
@@ -137,7 +139,7 @@ I checked for hints in the image files that was with the user flag but found not
 After searching through ```gtfobins``` for commands I found nothing.
 Hmmm....back to square one.
 
-Like every 30 seconds or a minute this message stating that "You haven't rooted me yet? Jezz" would be displayed. I thought it would be running as a ```cronjob``` but there was no binary mentioned in the ```/etc/crontab``` file that displayed this message. So, I searched through some directories and finally found something useful in the ```/Documents``` directory.
+Like every 30 seconds or a minute this message stating that "You haven't rooted me yet? Jezz" would be displayed. I thought it would be running as a ```cronjob``` but there was no binary mentioned in the ```/etc/crontab``` file that displayed this message. So, I searched through some directories and finally found file displaying the message in the ```/Documents``` directory.
 <br>
 ![boring_file](/assets/img/tryhackme/theblobblog/23.png)
 <br>

@@ -18,9 +18,9 @@ I am basically a cyber security enthusiast and I challenge myself to learn new s
 
 I like doing CTFs, coding, gaming and doing stuff..
 
-My aim right now is involve myself in learning more through ```CTFs``` and ```books```.
+My aim right now is involve myself in learning more through ```CTFs``` and ```BugBounty```.
 
-In this blog, I will be sharing my journey through cybersecurity. At any point in time, if you feel what I've explained in any of my blog posts is wrong or needs more clarity feel free to contact me using my e-mail. I will be more than happy to hear from you.
+In this blog, I will be sharing my journey through cybersecurity. At any point in time, if you feel what I've explained in any of my blog posts is wrong or needs more clarity feel free to contact me using my e-mail. I will be happy to hear from you.
 
 My favourite quote is from Rock Lee who is a character in Naruto Shippuden
 <br>
