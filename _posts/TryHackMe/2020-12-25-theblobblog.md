@@ -7,13 +7,14 @@ tags: [thm,linux,medium,reversing,reverse-shell]
 ---
 
 ---
-<p>The Blob Blog is a medium level room Tryhackme room. This rooms requires a little out-of-box thinking and some reversing skills. The final objective is to get the user and root flag.</p>
+<p>The Blob Blog is a medium level Tryhackme room. This rooms requires a little out-of-box thinking and some reversing skills. The final objective is to get the user and root flag.</p>
 <br>
 ![cover_image](/assets/img/tryhackme/theblobblog/1.png)
 
 **Author** | bobloblaw
 **Description** | Successfully hack into bobloblaw's computer.
 
+Deploy the VM and let's go.
 
 ## <ins>Enumeration</ins>
 ---
