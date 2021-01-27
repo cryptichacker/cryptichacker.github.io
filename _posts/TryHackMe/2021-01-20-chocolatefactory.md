@@ -3,7 +3,7 @@ layout: post
 title: Tryhackme - Chocolate Factory
 date: 2021-01-20 19:00:00 +0000
 category: [Tryhackme, Easy]
-tags: [thm,linux,easy,reversing,reverse-shell,cipher]
+tags: [thm,linux,easy,reversing,reverse-shell,cipher,gtfobins]
 ---
 
 ---

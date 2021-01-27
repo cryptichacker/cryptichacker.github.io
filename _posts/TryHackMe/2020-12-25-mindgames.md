@@ -3,7 +3,7 @@ layout: post
 title: Tryhackme - Mindgames
 date: 2020-12-25 19:00:00 +0000
 category: [Tryhackme, Medium]
-tags: [thm,linux,medium,openssl,capabilities]
+tags: [thm,linux,medium,openssl,capabilities,gtfobins]
 ---
 
 ---

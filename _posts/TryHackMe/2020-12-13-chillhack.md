@@ -3,7 +3,7 @@ layout: post
 title: Tryhackme - Chill Hack
 date: 2020-12-13 19:00:00 +0000
 category: [Tryhackme, Easy]
-tags: [thm,linux,easy,ftp]
+tags: [thm,linux,easy,ftp,gtfobins]
 ---
 
 ---

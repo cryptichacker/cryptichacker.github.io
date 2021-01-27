@@ -3,7 +3,7 @@ layout: post
 title: Tryhackme - The Server From Hell
 date: 2020-12-03 19:00:00 +0000
 category: [Tryhackme, Medium]
-tags: [thm,linux,medium,nfs]
+tags: [thm,linux,medium,nfs,gtfobins]
 ---
 
 ---

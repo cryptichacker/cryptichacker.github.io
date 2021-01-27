@@ -3,7 +3,7 @@ layout: post
 title: Tryhackme - The Blob Blog
 date: 2020-12-25 19:00:00 +0000
 category: [Tryhackme, Medium]
-tags: [thm,linux,medium,reversing,reverse-shell]
+tags: [thm,linux,medium,reversing,reverse-shell,gtfobins]
 ---
 
 ---
